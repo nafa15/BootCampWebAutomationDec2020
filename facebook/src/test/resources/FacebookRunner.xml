@@ -7,7 +7,7 @@
 
     <parameter name="platform" value="windows"/>
     <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://www.amazon.com/"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
 
     <parameter name="cloud" value="false"/>
     <parameter name="envName" value="saucelabs"/>
