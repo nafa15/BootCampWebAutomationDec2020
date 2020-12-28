@@ -19,7 +19,9 @@ public class HomePageValidations extends TestBase {
     @Test(enabled = false)
     public void validateUserBeingAbleToTypeOnSearchBar() {
         homePage.clickOnMenuBtn();
+        sleepFor(5);
         homePage.typeOnSearchBar();
+        sleepFor(5);
     }
 
     @Test(enabled = false)
