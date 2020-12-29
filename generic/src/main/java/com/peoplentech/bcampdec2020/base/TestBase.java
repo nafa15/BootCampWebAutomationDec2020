@@ -7,14 +7,12 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -202,6 +200,28 @@ public class TestBase {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
+    }
+
+    // Alert Handling Method
+    public Alert alertHandler(){
+        Alert alert = driver.switchTo().alert();
+        return alert;
+    }
+
+
+
+    //Cookies Handling
+    public WebDriver.Options cookiesHandler(){
+        WebDriver.Options cookie = driver.manage();
+        return cookie;
+    }
+
+
+
+    //Selecting items from the drop down menu
+    public Select selectInList(WebElement element) {
+        Select select = new Select(element);
+        return select;
     }
 
     @AfterSuite
