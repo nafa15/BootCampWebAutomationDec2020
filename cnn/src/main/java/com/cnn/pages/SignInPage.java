@@ -18,26 +18,27 @@ public class SignInPage {
     @FindBy(id = "userLogout-link")
     private WebElement logOutBtn;
 
-    public void typeInvalidEmailAddress(){
+    public void typeInvalidEmailAddress() {
         emailField.sendKeys("abcd1234@abcd.com");
         ExtentTestManager.log("Typed invalid email address");
     }
 
-    public void typeInvalidPassword(){
+    public void typeInvalidPassword() {
         passwordField.sendKeys("abcd1234");
         ExtentTestManager.log("Typed invalid password");
     }
 
-    public void typeValidEmailAddress(){
+    public void typeValidEmailAddress() {
         emailField.sendKeys("automationtester1590@gmail.com");
         ExtentTestManager.log("Typed valid email address");
     }
-    public void typeValidPassword(){
+
+    public void typeValidPassword() {
         passwordField.sendKeys("@Tester1234");
         ExtentTestManager.log("Typed valid password");
     }
 
-    public void logOut(){
+    public void logOut() {
         accountBtn.click();
     }
 }

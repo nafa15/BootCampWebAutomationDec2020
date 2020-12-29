@@ -28,30 +28,30 @@ public class DoctorPage {
     private WebElement doctorAndrewBtn;
 
 
-    public void clickOnEmployerBtn(){
+    public void clickOnEmployerBtn() {
         employerBtn.click();
     }
 
-    public void typeTheZipCode(){
+    public void typeTheZipCode() {
         zipCodeField.sendKeys("85603");
         suggestedLocationBtn.click();
         ExtentTestManager.log("Location setup");
     }
 
-    public void clickOnDoctorByTypeBtn(){
+    public void clickOnDoctorByTypeBtn() {
         doctorByTypeBtn.click();
     }
 
-    public void chooseADentist(){
+    public void chooseADentist() {
         dentistBtn.click();
         ExtentTestManager.log("Dentist chosen");
     }
 
-    public void continueAsAGuest(){
+    public void continueAsAGuest() {
         continueBtn.click();
     }
 
-    public void chooseADoctor(){
+    public void chooseADoctor() {
         doctorAndrewBtn.click();
     }
 

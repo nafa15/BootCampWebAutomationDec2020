@@ -19,12 +19,13 @@ public class SignInPage {
         usernameField.sendKeys("tester1");
         ExtentTestManager.log("username entered");
     }
-    public void enterPassword(){
+
+    public void enterPassword() {
         passwordField.sendKeys("abcd1234");
         ExtentTestManager.log("password entered");
     }
 
-    public void logIn(){
+    public void logIn() {
         logInBtn.click();
     }
 

@@ -13,21 +13,21 @@ public class SignInPageValidations extends TestBase {
     private SignInPage signInPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
         homePage = PageFactory.initElements(driver, HomePage.class);
         signInPage = PageFactory.initElements(driver, SignInPage.class);
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToInputEmailAndPasswordToSignIn(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToInputEmailAndPasswordToSignIn() {
         homePage.validateSignInButton();
         signInPage.validateURLForSignIn();
         signInPage.typeOnEmailFieldAndClickContinue();
         signInPage.typeOnPasswordFieldAndClickSignIn();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToSignInUsingPhoneNumber(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToSignInUsingPhoneNumber() {
         homePage.validateSignInButton();
         signInPage.validateURLForSignIn();
         signInPage.typeOnPhoneNumberFieldAndClickContinue();

@@ -11,33 +11,33 @@ public class HomePageValidations extends TestBase {
     private HomePage homePage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
         homePage = PageFactory.initElements(driver, HomePage.class);
     }
 
-@Test(enabled = false)
+    @Test(enabled = false)
     public void validateUserIsAbleToTypeOnSearchBarAndClickSearchButton() {
         homePage.typeOnSearchBar();
     }
 
-@Test(enabled = false)
+    @Test(enabled = false)
     public void validateUserIsAbleToScrollDownToElementAndScrollBackUp() {
         homePage.scrollToElement();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToHoverOverElement(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToHoverOverElement() {
         homePage.hoverOverElement();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToGetAQuote(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToGetAQuote() {
         homePage.clickOnIndividualsPlanBtn();
         homePage.clickToGetAQuote();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToChooseAPlan(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToChooseAPlan() {
         homePage.clickOnIndividualsPlanBtn();
         homePage.clickToGetAQuote();
         homePage.continueToGetAQuote();

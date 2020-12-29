@@ -13,19 +13,19 @@ public class SignInPageValidations extends TestBase {
     private SignInPage signInPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         homePage = PageFactory.initElements(driver, HomePage.class);
         signInPage = PageFactory.initElements(driver, SignInPage.class);
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToGoToLogInPage(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToGoToLogInPage() {
         homePage.clickOnLogInPageBtn();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToInputHisCredentials(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToInputHisCredentials() {
         signInPage.enterUserName();
         signInPage.enterPassword();
         signInPage.logIn();

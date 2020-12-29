@@ -13,13 +13,13 @@ public class SignUpPageValidations extends TestBase {
     private SignUpPage signUpPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
         homePage = PageFactory.initElements(driver, HomePage.class);
         signUpPage = PageFactory.initElements(driver, SignUpPage.class);
     }
 
     @Test(enabled = false)
-    public void validateUserBeingAbleToSignUp(){
+    public void validateUserBeingAbleToSignUp() {
         homePage.validateSignUpBtn();
         signUpPage.addName();
         signUpPage.addEmail();

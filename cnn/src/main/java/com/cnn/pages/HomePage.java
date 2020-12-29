@@ -40,45 +40,44 @@ public class HomePage {
     private WebElement accountBtn;
 
 
-
-    public void clickOnSearchBtn(){
+    public void clickOnSearchBtn() {
         searchBtn.click();
     }
 
-    public void typeOnSearchBar(){
+    public void typeOnSearchBar() {
         searchBar.sendKeys("covid 19 vaccines");
         ExtentTestManager.log("Typed on search bar");
         search.click();
     }
 
-    public void clickOnMenuBtn(){
+    public void clickOnMenuBtn() {
         menuBtn.click();
         ExtentTestManager.log("Scrolled down the menu");
     }
 
-    public void clickOnTechBtn(){
+    public void clickOnTechBtn() {
         techBtn.click();
     }
 
-    public void goToLiveTv(){
+    public void goToLiveTv() {
         liveTVBtn.click();
     }
 
-    public void clickOnEditionBtn(){
+    public void clickOnEditionBtn() {
         editionBtn.click();
     }
 
-    public void chooseEspagnol(){
+    public void chooseEspagnol() {
         espagnolBtn.click();
         ExtentTestManager.log("The spanish edition chosen");
     }
 
-    public void clickOnAnArticle(){
+    public void clickOnAnArticle() {
         articleBtn.click();
         ExtentTestManager.log("Article opened");
     }
 
-    public void validateAccountPage(){
+    public void validateAccountPage() {
         accountBtn.click();
         ExtentTestManager.log("sign in page is displayed");
     }

@@ -13,19 +13,19 @@ public class DoctorPageValidations extends TestBase {
     private DoctorPage doctorPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         homePage = PageFactory.initElements(driver, HomePage.class);
         doctorPage = PageFactory.initElements(driver, DoctorPage.class);
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToGoToFindADoctorPage(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToGoToFindADoctorPage() {
         homePage.clickOnFindADoctorBtn();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToLookForADoctor(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToLookForADoctor() {
         homePage.clickOnFindADoctorBtn();
         doctorPage.clickOnEmployerBtn();
         doctorPage.typeTheZipCode();

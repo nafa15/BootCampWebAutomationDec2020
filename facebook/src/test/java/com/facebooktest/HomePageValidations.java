@@ -44,10 +44,7 @@ public class HomePageValidations extends TestBase {
         homePage.inputValidEmailAddress();
         homePage.inputValidPassword();
         homePage.clickOnLoginBtn();
-
         sleepFor(5);
-
-        //homePage.clickOnFriends();
         homePage.confirmRequest();
     }
 
@@ -56,9 +53,7 @@ public class HomePageValidations extends TestBase {
         homePage.inputValidEmailAddress();
         homePage.inputValidPassword();
         homePage.clickOnLoginBtn();
-
         sleepFor(5);
-
         homePage.typeOnSearchBar();
     }
 
@@ -67,18 +62,12 @@ public class HomePageValidations extends TestBase {
         homePage.inputValidEmailAddress();
         homePage.inputValidPassword();
         homePage.clickOnLoginBtn();
-
         sleepFor(5);
-
         homePage.typeOnSearchBar();
-
         sleepFor(5);
-
         homePage.chooseAFriendFromAList();
-
         sleepFor(5);
         homePage.clickToAddAFriend();
-
         sleepFor(5);
     }
 
@@ -87,11 +76,8 @@ public class HomePageValidations extends TestBase {
         homePage.inputValidEmailAddress();
         homePage.inputValidPassword();
         homePage.clickOnLoginBtn();
-
         sleepFor(5);
-
         homePage.clickOnHomeBtn();
-
         homePage.clickOnLikeBtn();
 
     }
@@ -101,13 +87,9 @@ public class HomePageValidations extends TestBase {
         homePage.inputValidEmailAddress();
         homePage.inputValidPassword();
         homePage.clickOnLoginBtn();
-
         sleepFor(5);
-
         homePage.clickOnWatchBtn();
-
         sleepFor(10);
-
         homePage.likeAVideo();
         sleepFor(5);
 
@@ -119,30 +101,21 @@ public class HomePageValidations extends TestBase {
         homePage.inputValidEmailAddress();
         homePage.inputValidPassword();
         homePage.clickOnLoginBtn();
-
         sleepFor(5);
-
         homePage.clickOnHomeBtn();
-
         sleepFor(5);
-
         homePage.clickOnMarketplaceBtn();
-
         sleepFor(5);
 
     }
 
     @Test(enabled = false)
     public void validateUserBeingAbleToViewFriendsRequests() {
-
         homePage.inputValidEmailAddress();
         homePage.inputValidPassword();
         homePage.clickOnLoginBtn();
-
         sleepFor(5);
-
         homePage.clickOnFriendsBtn();
-
         sleepFor(5);
     }
 }

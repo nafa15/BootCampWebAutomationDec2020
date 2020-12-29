@@ -11,28 +11,28 @@ public class HomePageValidations extends TestBase {
     private HomePage homePage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
         homePage = PageFactory.initElements(driver, HomePage.class);
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToNavigateForAProduct(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToNavigateForAProduct() {
         homePage.clickOnMenuBtn();
         homePage.scrollTheFullMenu();
         homePage.clickOnComputersBtn();
         homePage.clickOnPCsBtn();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToSearchForAnItem(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToSearchForAnItem() {
         homePage.clickOnSearchbar();
         homePage.typeOnSearchBar();
         homePage.clickOnSearchBtn();
 
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToCheckout(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToCheckout() {
         homePage.clickOnSearchbar();
         homePage.typeOnSearchBar();
         homePage.clickOnSearchBtn();
@@ -41,25 +41,26 @@ public class HomePageValidations extends TestBase {
         homePage.noCoverage();
         homePage.continueToCheckout();
     }
-@Test(enabled = false)
-    public void validateUserBeingAbleToVerifySuggestions(){
+
+    @Test(enabled = false)
+    public void validateUserBeingAbleToVerifySuggestions() {
         homePage.validateAutoSuggestion();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToSell(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToSell() {
         homePage.clickOnSellBtn();
         homePage.continueToSignUp();
     }
 
-@Test(enabled = false)
+    @Test(enabled = false)
     public void validateUserIsAbleToHoverOverTryPrimeLogoAndClickTryPrime() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.clickOnTryPrime();
         homePage.validateURLForPrime();
     }
 
-@Test(enabled = false)
+    @Test(enabled = false)
     public void validateUserIsAbleToScrollDownToElementAndScrollBackUp() {
         HomePage homePage = PageFactory.initElements(driver, HomePage.class);
         homePage.scrollToElement();

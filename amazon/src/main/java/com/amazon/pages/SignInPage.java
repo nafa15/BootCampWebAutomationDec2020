@@ -1,17 +1,12 @@
 package com.amazon.pages;
 
-import com.amazon.data.DataProvider;
 import com.peoplentech.bcampdec2020.base.TestBase;
 import com.peoplentech.bcampdec2020.extent.ExtentTestManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 
 public class SignInPage {
-
-
 
     @FindBy(id = "Hello, Sign in")
     private WebElement signInBtn;
@@ -30,9 +25,6 @@ public class SignInPage {
 
     @FindBy(linkText = "Create your Amazon account")
     private WebElement createAccountButton;
-
-
-
 
     public void validateURLForSignIn() {
         String actualURL = TestBase.driver.getCurrentUrl();
@@ -54,12 +46,11 @@ public class SignInPage {
         ExtentTestManager.log("Typed on the password field and clicked on Sign In");
     }
 
-    public void typeOnPhoneNumberFieldAndClickContinue(){
+    public void typeOnPhoneNumberFieldAndClickContinue() {
         emailField.sendKeys("9099999999");
         continueButton.click();
         ExtentTestManager.log("Typed a phone number And Clicked on continue");
     }
-
 
 
 }

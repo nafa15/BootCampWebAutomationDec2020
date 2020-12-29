@@ -79,8 +79,6 @@ public class HomePage {
     private WebElement ratesBtn;
 
 
-
-
     public void clickOnCreditCardBtn() {
         creditCardsBtn.click();
     }
@@ -169,13 +167,13 @@ public class HomePage {
         ExtentTestManager.log("700$ Offer chosen");
     }
 
-    public void hoverOverBankingBtn(){
+    public void hoverOverBankingBtn() {
         Actions actions = new Actions(TestBase.driver);
         actions.moveToElement(bankingBtn).build().perform();
         ExtentTestManager.log("Hover over the Banking button");
     }
 
-    public void clickOnRatesBtn(){
+    public void clickOnRatesBtn() {
         ratesBtn.click();
         ExtentTestManager.log("Rates page is displayed");
     }

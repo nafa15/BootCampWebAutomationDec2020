@@ -21,10 +21,6 @@ public class HomePage {
     @FindBy(xpath = "//button[@name='login']")
     private WebElement signInBtn;
 
-    /*@FindBy(xpath = "//a[@aria-label='Friends']")
-    private WebElement friendsBtn;*/
-
-    //@FindBy(xpath = "(//span[text()='Confirm'])[1]")
     @FindBy(xpath = "(//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5'])[4]")
     private WebElement confirmRequestBtn;
 
@@ -56,7 +52,6 @@ public class HomePage {
     private WebElement likeVideoBtn;
 
 
-
     public void inputInvalidEmailAddress() {
         emailField.sendKeys("abcd@abcd.com");
         ExtentTestManager.log("Typed invalid email");
@@ -81,70 +76,59 @@ public class HomePage {
         signInBtn.click();
     }
 
-
     public void clickOnFriends() {
         friendsBtn.click();
         ExtentTestManager.log("Clicked to see friends requests");
 
     }
 
-    public void confirmRequest(){
+    public void confirmRequest() {
         confirmRequestBtn.click();
-
         ExtentTestManager.log("Friend request confirmed");
     }
 
-    public void handleThePopUp(){
-        Map<String, Object> prefs = new HashMap<String, Object>();
-        prefs.put("profile.default_content_setting_values.notifications", 2);
-        ChromeOptions options = new ChromeOptions();
-        options.setExperimentalOption("prefs", prefs);
-
-        WebDriver driver = new ChromeDriver(options);
-    }
-
-    public void clickOnLikeBtn(){
+    public void clickOnLikeBtn() {
         likeBtn.click();
         ExtentTestManager.log("Clicked on Like button");
     }
 
-    public void clickOnHomeBtn(){
+    public void clickOnHomeBtn() {
         homeBtn.click();
         ExtentTestManager.log("Clicked on Home button");
     }
 
-    public void typeOnSearchBar(){
+    public void typeOnSearchBar() {
         searchBar.sendKeys("Ami Real");
         ExtentTestManager.log("Typed on search bar");
     }
 
-    public void chooseAFriendFromAList(){
+    public void chooseAFriendFromAList() {
         chooseAFriendBtn.click();
         ExtentTestManager.log("Friend chosen");
 
     }
 
-    public void clickToAddAFriend(){
+    public void clickToAddAFriend() {
         addFriendBtn.click();
         ExtentTestManager.log("friend added");
     }
 
-    public void clickOnWatchBtn(){
+    public void clickOnWatchBtn() {
         watchBtn.click();
         ExtentTestManager.log("clicked on watch button");
     }
 
-    public void clickOnMarketplaceBtn(){
+    public void clickOnMarketplaceBtn() {
         marketaPlaceBtn.click();
         ExtentTestManager.log("clicked on watch button");
     }
 
-    public void clickOnFriendsBtn(){
+    public void clickOnFriendsBtn() {
         friendsBtn.click();
         ExtentTestManager.log("clicked on watch button");
     }
 
-    public void likeAVideo(){
+    public void likeAVideo() {
         likeVideoBtn.click();
         ExtentTestManager.log("liked a video");
     }

@@ -13,36 +13,36 @@ public class SignInPageValidations extends TestBase {
     private SignInPage signInPage;
 
     @BeforeMethod
-    public void pageFactorySetup(){
+    public void pageFactorySetup() {
 
         homePage = PageFactory.initElements(driver, HomePage.class);
         signInPage = PageFactory.initElements(driver, SignInPage.class);
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToLogInWithInValidCredentials(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToLogInWithInValidCredentials() {
         homePage.validateAccountPage();
         signInPage.typeInvalidEmailAddress();
         signInPage.typeInvalidPassword();
 
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToLogInWithValidEmailAndInvalidPassword(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToLogInWithValidEmailAndInvalidPassword() {
         homePage.validateAccountPage();
         signInPage.typeValidEmailAddress();
         signInPage.typeInvalidPassword();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToLogInWithValidCredentials(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToLogInWithValidCredentials() {
         homePage.validateAccountPage();
         signInPage.typeValidEmailAddress();
         signInPage.typeValidPassword();
     }
 
-@Test(enabled = false)
-    public void validateUserBeingAbleToLogOut(){
+    @Test(enabled = false)
+    public void validateUserBeingAbleToLogOut() {
         homePage.validateAccountPage();
         signInPage.typeValidEmailAddress();
         signInPage.typeValidPassword();
