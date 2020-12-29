@@ -16,14 +16,14 @@ public class HomePageValidations extends TestBase {
     }
 
     @Test(enabled = false)
-    public void validateUserBeingAbleToLogInWithInValidCredentials() {
+    public void validateUserNotBeingAbleToLogInWithInValidCredentials() {
         homePage.inputInvalidEmailAddress();
         homePage.inputInValidPassword();
 
     }
 
     @Test(enabled = false)
-    public void validateUserBeingAbleToLogInWithValidEmailAndInvalidPassword() {
+    public void validateUserNotBeingAbleToLogInWithValidEmailAndInvalidPassword() {
         homePage.inputValidEmailAddress();
         homePage.inputInValidPassword();
 
